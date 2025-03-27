@@ -22,7 +22,7 @@ SET id = REPLACE(id, ' ', '');
 --Removing Special Characters From column amount_over_fmt
 BEGIN TRAN
 UPDATE bandcamp_data
-SET amount_over_fmt = LTRIM(amount_over_fmt,'â''Â''¬''£''¥''‚');
+SET amount_over_fmt = LTRIM(amount_over_fmt,'Ã¢''Ã‚''Â¬''Â£''Â¥''â€š');
 --Remove whitespace between the numbers
 UPDATE bandcamp_data
 SET amount_over_fmt = REPLACE(amount_over_fmt, ' ', '');
